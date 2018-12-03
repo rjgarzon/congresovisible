@@ -71,11 +71,11 @@ var datosnew={};
 	
   <div class="floatleft">
   
-  <ul ui-sortable="sortableOptions" ng-model="list" class="list logList">
-      <li ng-repeat ="item1 in list" class="item">
-       yyy {{item1.text}}
-      </li>
-    </ul>
+  <div ui-sortable="sortableOptions" ng-model="list" class="list">
+      <div ui-sortable-selectable ng-repeat="item in list" class="item">
+        {{item.text}}
+      </div>
+    </div>
   
   
   <!--  <div ui-sortable="sortableOptions" ng-model="list" class="list logList"> 

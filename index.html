@@ -71,20 +71,26 @@ var datosnew={};
 	
   <div class="floatleft">
   
+  <ul ui-sortable="sortableOptions" ng-model="list" class="list logList">
+      <li ng-repeat="item in list" class="item">
+        {{item.text}}
+      </li>
+    </ul>
   
-    <div ui-sortable="sortableOptions" ng-model="list" class="list logList">
+  
+  <!--  <div ui-sortable="sortableOptions" ng-model="list" class="list logList"> 
 	
 	
       <div  ng-repeat="item in list" class="item">
       {{item.text}}
-      </div>
+      </div> -->
 	  <p>
 	  <div class="floatcenter">
 	 <input type="button" value="Mostrar" ng-click="procesarClic()" class="button">
 	 </div>
 	  <p>
 	
-    </div>
+    <!--  </div> -->
 	
 	  
 
